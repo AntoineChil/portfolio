@@ -1,0 +1,148 @@
+.hero {
+  padding-block: clamp(4rem, 9vw, 7.5rem);
+}
+
+/* Mobile : une colonne (portrait en dessous). Desktop : texte 7/12, portrait 5/12. */
+.grid {
+  position: relative; /* repère pour FrameLines */
+  display: grid;
+  gap: var(--space-7);
+}
+
+@media (min-width: 60rem) {
+  .grid {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: center;
+    gap: var(--space-8);
+  }
+}
+
+/* ---------- Badge de statut ---------- */
+
+.status {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding: 0.3rem;
+  background: linear-gradient(180deg, #ffffff 0%, #cfe3ff 100%);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0 24px rgba(120, 170, 255, 0.35);
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.statusLocation {
+  padding-inline: var(--space-3) var(--space-1);
+  color: #0a1270;
+}
+
+.statusAvailability {
+  padding: 0.25rem 0.85rem;
+  background: linear-gradient(180deg, #1a2bd0 0%, #050a5c 100%);
+  border-radius: var(--radius-pill);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: var(--color-accent-strong);
+}
+
+/* ---------- Titres ---------- */
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.name {
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+/* Bandeau bleu en police pixel, repris du visuel « DÉVELOPPEUR FULL STACK » */
+.role {
+  padding: 0.15rem 0.65rem;
+  background: var(--color-surface-strong);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent-strong);
+  text-shadow: 0 0 12px rgba(140, 190, 255, 0.6);
+}
+
+/* L'accroche : le vrai titre visuel de la page */
+.hook {
+  max-width: 24ch;
+  margin-bottom: var(--space-6);
+  font-size: var(--step-4);
+}
+
+.intro {
+  max-width: 52ch;
+  color: var(--color-ink-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+/* ---------- Portrait ---------- */
+
+.portrait {
+  position: relative;
+  width: min(100%, 26rem);
+  justify-self: center;
+  border: 1px solid var(--color-line-strong);
+  box-shadow: 0 0 60px rgba(26, 34, 255, 0.35);
+}
+
+.portrait img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* Poignées de sélection aux 4 coins */
+.handle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: var(--color-node);
+  box-shadow: var(--glow-node);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.handle:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+
+.handle:nth-of-type(2) {
+  top: 0;
+  left: 100%;
+}
+
+.handle:nth-of-type(3) {
+  top: 100%;
+  left: 0;
+}
+
+.handle:nth-of-type(4) {
+  top: 100%;
+  left: 100%;
+}
+
+@media (min-width: 60rem) {
+  .portrait {
+    justify-self: end;
+  }
+}

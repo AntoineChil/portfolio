@@ -1,0 +1,221 @@
+/* ---------- En-tête ---------- */
+
+.header {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+  margin-bottom: var(--space-section);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.headerInner {
+  position: relative; /* repère pour FrameLines */
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: var(--space-7);
+  padding-block: var(--space-2);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-ink-muted);
+}
+
+.kicker {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.title {
+  max-width: 18ch;
+  margin-bottom: var(--space-5);
+  font-size: var(--step-4);
+}
+
+.lede {
+  max-width: 50ch;
+  margin-bottom: var(--space-7);
+  font-size: var(--step-1);
+  line-height: 1.45;
+  color: var(--color-ink-soft);
+}
+
+/* Faits clés : grille façon fiche technique */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  border-top: 1px solid var(--color-line-strong);
+}
+
+.fact {
+  padding: var(--space-4) var(--space-4) var(--space-4) 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.fact dt {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.fact dd {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+/* ---------- Étapes ---------- */
+
+.steps {
+  display: grid;
+  gap: var(--space-section);
+}
+
+.intro {
+  max-width: 60ch;
+  margin-bottom: var(--space-6);
+}
+
+.features {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: feature;
+}
+
+@media (min-width: 48rem) {
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Chaque fonctionnalité : petite carte « verre bleu » */
+.feature {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  counter-increment: feature;
+}
+
+/* Numérotation a, b, c… en police pixel */
+.featureTitle::before {
+  content: counter(feature, lower-alpha) '.';
+  margin-right: var(--space-2);
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+.featureTitle {
+  margin-bottom: var(--space-2);
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+.featureText {
+  font-size: var(--step--1);
+  color: var(--color-ink-muted);
+}
+
+.tech {
+  border-top: 1px solid var(--color-line-strong);
+}
+
+.techRow {
+  display: grid;
+  gap: var(--space-1);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-line);
+}
+
+@media (min-width: 48rem) {
+  .techRow {
+    grid-template-columns: 11rem minmax(0, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+.techName {
+  font-family: var(--font-pixel);
+  font-size: var(--step-0);
+  color: var(--color-accent-strong);
+}
+
+.techText {
+  color: var(--color-ink-muted);
+}
+
+.note {
+  margin-top: var(--space-6);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-left: 2px solid var(--color-accent);
+  font-size: var(--step--1);
+}
+
+.noteLabel {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* ---------- Captures ---------- */
+
+.gallery {
+  padding-top: var(--space-section);
+}
+
+.galleryTitle {
+  margin-bottom: var(--space-6);
+  font-size: var(--step-3);
+}
+
+.galleryGrid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 48rem) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* La première capture prend toute la largeur */
+  .galleryGrid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Suite ---------- */
+
+.next {
+  margin-top: var(--space-section);
+  padding-block: var(--space-section);
+  border-top: 1px solid var(--color-line);
+}
+
+.nextTitle {
+  max-width: 20ch;
+  margin-bottom: var(--space-6);
+  font-size: var(--step-3);
+}
+
+.nextActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}

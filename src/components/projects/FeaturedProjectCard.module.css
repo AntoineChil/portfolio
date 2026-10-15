@@ -1,0 +1,68 @@
+.card {
+  display: grid;
+  gap: var(--space-7);
+  padding-bottom: var(--space-section);
+}
+
+@media (min-width: 60rem) {
+  .card {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .illustration {
+    justify-self: end;
+  }
+}
+
+.kicker {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.title {
+  margin-bottom: var(--space-4);
+  font-size: var(--step-3);
+}
+
+.summary {
+  max-width: 48ch;
+  margin-bottom: var(--space-5);
+  color: var(--color-ink-muted);
+}
+
+/* Liste à filets fins, puces = points d'ancrage lumineux */
+.highlights {
+  margin: 0 0 var(--space-5);
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-line);
+}
+
+.highlights li {
+  display: flex;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--color-line);
+  font-size: var(--step--1);
+}
+
+.highlights li::before {
+  content: '';
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin-top: 0.6em;
+  border-radius: 50%;
+  background: var(--color-node);
+  box-shadow: var(--glow-node);
+}
+
+.tags {
+  margin-bottom: var(--space-6);
+}

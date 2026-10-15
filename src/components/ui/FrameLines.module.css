@@ -1,0 +1,77 @@
+.frame {
+  position: absolute;
+  top: calc(-1 * var(--frame-pad));
+  bottom: calc(-1 * var(--frame-pad));
+  /* Les filets verticaux tombent au milieu de la marge latérale */
+  left: calc(var(--gutter) / 2);
+  right: calc(var(--gutter) / 2);
+  pointer-events: none;
+}
+
+.line {
+  position: absolute;
+  background: var(--color-line);
+}
+
+/* Filets horizontaux : traversent toute la largeur de l'écran */
+.top,
+.bottom {
+  left: -100vw;
+  right: -100vw;
+  height: 1px;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+/* Filets verticaux : traversent toute la hauteur de la section */
+.left,
+.right {
+  top: -100vh;
+  bottom: -100vh;
+  width: 1px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+/* Points d'ancrage lumineux aux intersections */
+.node {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-node);
+  box-shadow: var(--glow-node);
+  transform: translate(-50%, -50%);
+}
+
+.topLeft {
+  top: 0;
+  left: 0;
+}
+
+.topRight {
+  top: 0;
+  left: 100%;
+}
+
+.bottomLeft {
+  top: 100%;
+  left: 0;
+}
+
+.bottomRight {
+  top: 100%;
+  left: 100%;
+}

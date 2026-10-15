@@ -1,0 +1,60 @@
+.groups {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-line-strong);
+}
+
+/* Une ligne : intitulé à gauche, valeurs à droite */
+.row {
+  display: grid;
+  gap: var(--space-3);
+  padding-block: var(--space-5);
+  border-bottom: 1px solid var(--color-line);
+}
+
+@media (min-width: 48rem) {
+  .row {
+    grid-template-columns: 14rem minmax(0, 1fr);
+    align-items: baseline;
+    gap: var(--space-6);
+  }
+}
+
+.rowTitle {
+  font-family: var(--font-pixel);
+  font-size: var(--step-0);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.education {
+  margin-top: var(--space-7);
+  border-top: 1px solid var(--color-line-strong);
+  border-bottom: none;
+}
+
+.educationList {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.degree {
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.school {
+  margin-top: var(--space-1);
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--color-ink-muted);
+}

@@ -1,0 +1,39 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Chaque niveau : bloc bleu en police pixel */
+.level {
+  padding: 0.3rem 0.7rem;
+  background: var(--color-surface-strong);
+  border: 1px solid var(--color-line);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+/* Le dernier niveau — la position — est celui qu'on cherche : il s'allume */
+.item:last-child .level {
+  border-color: var(--color-accent);
+  color: var(--color-accent-strong);
+  box-shadow: 0 0 18px rgba(80, 130, 255, 0.55);
+  text-shadow: 0 0 10px rgba(140, 190, 255, 0.7);
+}
+
+.arrow {
+  font-family: var(--font-pixel);
+  color: var(--color-ink-muted);
+}

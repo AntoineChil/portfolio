@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Une boîte de 3×3 positions, une seule "trouvée" : le motif du site -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#0b12c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#bg)"/>
+  <g fill="#3a4bd8">
+    <circle cx="9" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><circle cx="23" cy="9" r="3"/>
+    <circle cx="9" cy="16" r="3"/><circle cx="16" cy="16" r="3"/>
+    <circle cx="9" cy="23" r="3"/><circle cx="16" cy="23" r="3"/><circle cx="23" cy="23" r="3"/>
+  </g>
+  <circle cx="23" cy="16" r="3" fill="#cfe5ff"/>
+</svg>

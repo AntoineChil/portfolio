@@ -1,0 +1,85 @@
+.card {
+  display: grid;
+  gap: var(--space-6);
+  padding-top: var(--space-section);
+  border-top: 1px solid var(--color-line);
+}
+
+@media (min-width: 60rem) {
+  .card {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: var(--space-8);
+    align-items: center;
+  }
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* « Projet de groupe » : pilule claire, bien visible, pour ne pas laisser d'ambiguïté */
+.badge {
+  padding: 0.1rem 0.7rem;
+  background: linear-gradient(180deg, #ffffff 0%, #cfe3ff 100%);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: var(--step--2);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0a1270;
+}
+
+.kicker {
+  color: var(--color-accent);
+}
+
+.title {
+  margin-bottom: var(--space-4);
+  font-size: var(--step-3);
+}
+
+.summary {
+  max-width: 48ch;
+  margin-bottom: var(--space-5);
+  color: var(--color-ink-muted);
+}
+
+.tags {
+  margin-bottom: var(--space-6);
+}
+
+/* Encadré « verre bleu » avec lueur en bas */
+.contribution {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background:
+    radial-gradient(100% 70% at 50% 120%, rgba(26, 34, 255, 0.45), transparent 70%),
+    rgba(4, 6, 40, 0.75);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+
+.contributionLabel {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.contributionText {
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}

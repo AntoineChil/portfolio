@@ -1,0 +1,73 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.72);
+  border-bottom: 1px solid var(--color-line);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  height: var(--header-height);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-right: auto;
+  font-weight: 600;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+/* Monogramme : petit bloc bleu en police pixel, comme le bandeau « DÉVELOPPEUR FULL STACK » */
+.mark {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--color-surface-strong);
+  border: 1px solid var(--color-line-strong);
+  font-family: var(--font-pixel);
+  font-size: var(--step--1);
+  color: var(--color-accent-strong);
+  transition: box-shadow 0.2s var(--ease);
+}
+
+.brand:hover .mark {
+  box-shadow: 0 0 16px rgba(80, 120, 255, 0.6);
+}
+
+.navList {
+  display: flex;
+  gap: clamp(0.9rem, 2.5vw, 2rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navLink {
+  display: inline-block;
+  padding-block: var(--space-3); /* zone cliquable confortable (≥ 44 px) */
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  text-decoration: none;
+}
+
+/* Sur petit écran : on garde le monogramme, le nom reste accessible */
+@media (max-width: 40rem) {
+  .brandName {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}

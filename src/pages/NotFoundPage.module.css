@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding-block: var(--space-section);
+}
+
+.inner {
+  position: relative; /* repère pour FrameLines */
+}
+
+.code {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-pixel);
+  font-size: var(--step-3);
+  line-height: 1;
+  color: var(--color-accent);
+  text-shadow: 0 0 18px rgba(120, 170, 255, 0.6);
+}
+
+.title {
+  margin-bottom: var(--space-4);
+  font-size: var(--step-4);
+}
+
+.text {
+  margin-bottom: var(--space-6);
+  color: var(--color-ink-muted);
+}

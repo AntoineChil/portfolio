@@ -1,0 +1,8 @@
+.section {
+  padding-block: var(--space-section);
+  border-top: 1px solid var(--color-line);
+}
+
+.inner {
+  position: relative; /* repère pour FrameLines */
+}

@@ -1,0 +1,64 @@
+/* Boutons en pilule, inspirés du « Voir mes contributions » des visuels */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 3rem;
+  padding: 0 var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    box-shadow 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    color 0.25s var(--ease);
+}
+
+/* Plein : verre bleu électrique, reflet en haut, halo */
+.primary {
+  background: linear-gradient(180deg, #2433e6 0%, #0b1380 100%);
+  border-color: rgba(150, 185, 255, 0.65);
+  color: var(--color-accent-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 0 22px rgba(40, 80, 255, 0.45);
+}
+
+.primary:hover {
+  color: #ffffff;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 0 34px rgba(70, 110, 255, 0.75);
+}
+
+/* Contour : filet clair, se remplit de lumière au survol */
+.secondary {
+  background: rgba(10, 15, 80, 0.35);
+  border-color: var(--color-line-strong);
+  color: var(--color-ink);
+}
+
+.secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-strong);
+  box-shadow: 0 0 22px rgba(40, 80, 255, 0.35);
+}
+
+.arrow {
+  font-family: var(--font-pixel);
+  transition: transform 0.2s var(--ease);
+}
+
+.button:hover .arrow {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button:hover .arrow {
+    transform: none;
+  }
+}

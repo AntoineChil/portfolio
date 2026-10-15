@@ -1,0 +1,73 @@
+/*
+ * Design tokens — toute l'identité visuelle se règle ici.
+ *
+ * Direction « nuit électrique » : noir profond qui glisse vers un bleu
+ * électrique, filets fins avec points d'ancrage (comme un cadre de sélection
+ * dans Figma), titres en grotesque gras lumineux, accents en police pixel.
+ * Thème sombre unique : c'est l'identité du site.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* Fonds */
+  --color-bg: #000000;
+  --color-bg-deep: #01010d;
+  --color-blue-950: #02024a;
+  --color-blue-800: #0606a8;
+  --color-blue-600: #1a22ff;          /* bleu électrique (lueurs) */
+
+  /* Surfaces translucides (cartes, encadrés) */
+  --color-surface: rgba(28, 40, 190, 0.14);
+  --color-surface-strong: rgba(18, 30, 160, 0.55);
+
+  /* Texte — contrastes ≥ 4,5:1 sur noir comme sur bleu */
+  --color-ink: #f2f6ff;
+  --color-ink-soft: #dce6ff;
+  --color-ink-muted: #a9b8e8;
+
+  /* Lumière */
+  --color-accent: #9ccbff;            /* bleu clair lumineux */
+  --color-accent-strong: #cfe5ff;
+  --color-line: rgba(160, 190, 255, 0.26);   /* filets */
+  --color-line-strong: rgba(160, 190, 255, 0.5);
+  --color-node: #cfe3ff;              /* points d'ancrage */
+
+  /* Dégradés et lueurs */
+  --gradient-text: linear-gradient(180deg, #ffffff 15%, #a8d0ff 100%);
+  --glow-text: drop-shadow(0 0 18px rgba(120, 170, 255, 0.55));
+  --glow-node: 0 0 10px rgba(160, 200, 255, 0.8);
+
+  /* Typographie */
+  --font-sans: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-pixel: 'Pixelify Sans', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  /* Échelle typographique fluide (s'adapte entre mobile et desktop) */
+  --step--2: clamp(0.78rem, 0.76rem + 0.1vw, 0.84rem);
+  --step--1: clamp(0.88rem, 0.85rem + 0.15vw, 0.96rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.45vw, 1.45rem);
+  --step-2: clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --step-3: clamp(1.9rem, 1.5rem + 1.8vw, 3rem);
+  --step-4: clamp(2.2rem, 1.5rem + 3vw, 4rem);
+
+  /* Espacements */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-section: clamp(4rem, 10vw, 8rem);
+
+  /* Mise en page */
+  --container: 76rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --frame-pad: clamp(1.25rem, 3vw, 2.5rem); /* débord des cadres autour du contenu */
+  --header-height: 4rem;
+  --radius: 6px;
+  --radius-pill: 999px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
