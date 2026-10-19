@@ -5,14 +5,14 @@ import styles from './StorageGrid.module.css'
 /**
  * Illustration signature du hero : une boîte de stockage 9×9 (lignes A–I,
  * colonnes 1–9). Le chemin de localisation s'écrit étape par étape, puis la
- * position recherchée s'allume — l'accroche, racontée sans un mot de plus.
+ * position recherchée s'allume - l'accroche, racontée sans un mot de plus.
  *
  * Purement décorative (aria-hidden) : le texte du hero porte déjà le message.
  * Les animations sont désactivées si l'utilisateur préfère réduire les mouvements.
  *
  * Props :
  * - path    : étapes du chemin (ex. ['Frigo 03', ..., 'Position E7'])
- * - target  : { row, col } — position allumée, index à partir de 0
+ * - target  : { row, col } - position allumée, index à partir de 0
  * - caption : légende sous la boîte
  */
 const ROWS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']

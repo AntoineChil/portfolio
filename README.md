@@ -1,4 +1,4 @@
-# Portfolio — Antoine Chilewski
+# Portfolio - Antoine Chilewski
 
 Portfolio personnel de développeur full stack PHP/Symfony & React.
 React 18 + Vite, React Router, CSS Modules. Pensé pour être déployé sur **Vercel**.
@@ -25,7 +25,7 @@ npm run preview   # sert le build de production en local pour le vérifier
 
 ## 2. Déployer sur Vercel
 
-### Option A — depuis GitHub (recommandée)
+### Option A - depuis GitHub (recommandée)
 
 1. Créer un dépôt GitHub et y pousser le projet :
    ```bash
@@ -42,7 +42,7 @@ npm run preview   # sert le build de production en local pour le vérifier
    - Output Directory : `dist`
 4. Cliquer sur **Deploy**. Chaque `git push` sur `main` redéploie ensuite le site automatiquement.
 
-### Option B — en ligne de commande
+### Option B - en ligne de commande
 
 ```bash
 npm install -g vercel

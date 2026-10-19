@@ -15,7 +15,7 @@ const skills = {
   educationTitle: 'Formation',
   education: [
     {
-      title: 'Développeur full stack — certification RNCP niveau 6',
+      title: 'Développeur full stack - certification RNCP niveau 6',
       school: 'Le Wagon',
     },
     {

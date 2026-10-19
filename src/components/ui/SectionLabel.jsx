@@ -1,7 +1,7 @@
 import styles from './SectionLabel.module.css'
 
 /**
- * Étiquette numérotée façon registre : « 01 —— PROJETS ».
+ * Étiquette numérotée façon registre : « 01 -- PROJETS ».
  * C'est un vrai titre (h2 par défaut) pour garder une hiérarchie accessible.
  */
 export default function SectionLabel({ index, id, as: Heading = 'h2', children }) {

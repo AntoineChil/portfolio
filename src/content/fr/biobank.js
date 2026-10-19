@@ -33,7 +33,7 @@ const biobank = {
     illustration: {
       path: ['Frigo 03', 'Étagère 2', 'Rack B', 'Boîte 14', 'Position E7'],
       target: { row: 4, col: 6 }, // index à partir de 0 → ligne E, colonne 7
-      caption: 'Illustration — localiser un échantillon dans une boîte 9×9',
+      caption: 'Illustration - localiser un échantillon dans une boîte 9×9',
     },
   },
 
@@ -52,7 +52,7 @@ const biobank = {
       { label: 'Stack', value: 'Symfony · React · MariaDB · Doctrine ORM' },
     ],
 
-    // 01 — Contexte et problème
+    // 01 - Contexte et problème
     context: {
       title: 'Contexte et problème',
       paragraphs: [
@@ -63,7 +63,7 @@ const biobank = {
       hierarchy: ['Frigo', 'Étagère', 'Rack', 'Tiroir', 'Boîte', 'Position'],
     },
 
-    // 02 — Ma démarche
+    // 02 - Ma démarche
     approach: {
       title: 'Ma démarche',
       intro:
@@ -71,7 +71,7 @@ const biobank = {
       features: [
         {
           title: 'Modéliser le stockage réel',
-          text: 'Chaque niveau — frigo, étagère, rack, tiroir, boîte, position — est représenté dans le modèle de données avec Doctrine ORM.',
+          text: 'Chaque niveau - frigo, étagère, rack, tiroir, boîte, position - est représenté dans le modèle de données avec Doctrine ORM.',
         },
         {
           title: 'Alimenter la base en masse',
@@ -92,7 +92,7 @@ const biobank = {
       ],
     },
 
-    // 03 — Choix techniques
+    // 03 - Choix techniques
     tech: {
       title: 'Choix techniques',
       choices: [
@@ -115,7 +115,7 @@ const biobank = {
       ],
     },
 
-    // 04 — Résultat (uniquement des faits, aucun chiffre inventé)
+    // 04 - Résultat (uniquement des faits, aucun chiffre inventé)
     result: {
       title: 'Résultat',
       paragraphs: [

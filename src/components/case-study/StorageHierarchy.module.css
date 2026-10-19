@@ -25,7 +25,7 @@
   color: var(--color-ink-soft);
 }
 
-/* Le dernier niveau — la position — est celui qu'on cherche : il s'allume */
+/* Le dernier niveau - la position - est celui qu'on cherche : il s'allume */
 .item:last-child .level {
   border-color: var(--color-accent);
   color: var(--color-accent-strong);

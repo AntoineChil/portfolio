@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
 // Polices auto-hébergées (servies par Vercel, aucun appel à Google Fonts)
-// Inter Tight : texte et titres — Pixelify Sans : accents « pixel »
+// Inter Tight : texte et titres - Pixelify Sans : accents « pixel »
 import '@fontsource/inter-tight/400.css'
 import '@fontsource/inter-tight/500.css'
 import '@fontsource/inter-tight/600.css'

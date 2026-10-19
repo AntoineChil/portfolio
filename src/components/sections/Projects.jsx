@@ -3,7 +3,7 @@ import Section from '../ui/Section.jsx'
 import FeaturedProjectCard from '../projects/FeaturedProjectCard.jsx'
 import TripEasyCard from '../projects/TripEasyCard.jsx'
 
-/** Section « 01 — Projets » : projet phare puis TripEasy. */
+/** Section « 01 - Projets » : projet phare puis TripEasy. */
 export default function Projects() {
   const { projects } = useContent().site.sections
 

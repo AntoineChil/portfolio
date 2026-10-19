@@ -1,5 +1,5 @@
 /**
- * Contenu global du site — version française.
+ * Contenu global du site - version française.
  *
  * Tout le texte affiché vit dans ce dossier, jamais dans les composants.
  * Pour une version anglaise : dupliquer `content/fr/` en `content/en/`,
@@ -24,7 +24,7 @@ const links = {
 
 const site = {
   meta: {
-    title: 'Antoine Chilewski — Développeur Full Stack PHP/Symfony & React',
+    title: 'Antoine Chilewski - Développeur Full Stack PHP/Symfony & React',
   },
 
   person: {

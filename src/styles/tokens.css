@@ -1,5 +1,5 @@
 /*
- * Design tokens — toute l'identité visuelle se règle ici.
+ * Design tokens - toute l'identité visuelle se règle ici.
  *
  * Direction « nuit électrique » : noir profond qui glisse vers un bleu
  * électrique, filets fins avec points d'ancrage (comme un cadre de sélection
@@ -21,7 +21,7 @@
   --color-surface: rgba(28, 40, 190, 0.14);
   --color-surface-strong: rgba(18, 30, 160, 0.55);
 
-  /* Texte — contrastes ≥ 4,5:1 sur noir comme sur bleu */
+  /* Texte - contrastes ≥ 4,5:1 sur noir comme sur bleu */
   --color-ink: #f2f6ff;
   --color-ink-soft: #dce6ff;
   --color-ink-muted: #a9b8e8;

@@ -1,5 +1,5 @@
 /**
- * Projet TripEasy — projet de groupe réalisé au Wagon.
+ * Projet TripEasy - projet de groupe réalisé au Wagon.
  */
 
 const tripeasy = {

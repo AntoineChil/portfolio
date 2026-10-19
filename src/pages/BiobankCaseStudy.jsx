@@ -19,7 +19,7 @@ import styles from './BiobankCaseStudy.module.css'
 export default function BiobankCaseStudy() {
   const { site, biobank } = useContent()
   const cs = biobank.caseStudy
-  useDocumentTitle(`${cs.metaTitle} — ${site.person.name}`)
+  useDocumentTitle(`${cs.metaTitle} - ${site.person.name}`)
 
   // La section « Aperçu » n'apparaît que si au moins une capture est renseignée.
   const screenshots = cs.gallery.images.filter((image) => image.src)

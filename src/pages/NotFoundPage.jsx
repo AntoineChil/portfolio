@@ -7,7 +7,7 @@ import styles from './NotFoundPage.module.css'
 
 export default function NotFoundPage() {
   const { person, notFound } = useContent().site
-  useDocumentTitle(`${notFound.title} — ${person.name}`)
+  useDocumentTitle(`${notFound.title} - ${person.name}`)
 
   return (
     <div className={`backdrop ${styles.page}`}>

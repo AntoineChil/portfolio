@@ -7,7 +7,7 @@ import styles from './Contact.module.css'
 // Flèche selon le type de lien
 const ARROWS = { mail: '→', external: '↗', download: '↓' }
 
-/** Section « 03 — Contact » : fond lumineux, grandes lignes cliquables. */
+/** Section « 03 - Contact » : fond lumineux, grandes lignes cliquables. */
 export default function Contact() {
   const { sections, contact, ui } = useContent().site
   const { index, label } = sections.contact

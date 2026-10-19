@@ -3,7 +3,7 @@ import Section from '../ui/Section.jsx'
 import TagList from '../ui/TagList.jsx'
 import styles from './Skills.module.css'
 
-/** Section « 02 — Stack & compétences » : tableau façon registre + formation. */
+/** Section « 02 - Stack & compétences » : tableau façon registre + formation. */
 export default function Skills() {
   const { site, skills } = useContent()
   const { index, label } = site.sections.skills
